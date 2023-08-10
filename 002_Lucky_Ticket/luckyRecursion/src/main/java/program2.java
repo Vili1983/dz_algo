@@ -5,7 +5,7 @@ public class program2 {
         Test test = new Test();
         try{
             for (int i = 0; i <=9; i++) {
-                test.Test(path+"test."+i+".in",path+"test."+i+".out", ticket);
+                test.Test(path, "test."+i+".in","test."+i+".out", ticket);
             }
 
         }
