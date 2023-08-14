@@ -11,4 +11,12 @@ public class UserMath {
         }
         return result;
     }
+
+    public double DegreeIteration(double baseOfDegree, long degree){
+        double result = 1.0;
+        for (int i = 0; i < degree; i++) {
+            result*=baseOfDegree;
+        }
+        return result;
+    }
 }
