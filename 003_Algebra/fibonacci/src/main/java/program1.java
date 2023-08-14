@@ -1,14 +1,32 @@
+import java.time.Duration;
+import java.time.Instant;
+
 public class program1 {
     public static void main(String[] args) {
         UserFibonacci userFib = new UserFibonacci();
-//        for (int i = 1; i <= 1477; i++) {
-//            System.out.println("n = "+i + ": " + userFib.TailRecursionFibonacci(i, 0, 1));
-//        }
-//        System.out.println(userFib.TailRecursionFibonacci(40, 0, 1));
+
+        Instant start;
+        Instant finish;
+        double time;
+        double tempNumber = 0.0;
+
         for (int i = 1; i <= 1500; i++) {
-            System.out.println("tail n = "+i + ": " + userFib.TailRecursionFibonacci(i, 0, 1));
-            System.out.println("     n = "+i + ": " + userFib.InterationFibonacci(i, 0, 1));
+            start = Instant.now();
+            tempNumber = userFib.TailRecursionFibonacci(i, 0, 1);
+            finish = Instant.now();
+            time = Duration.between(start, finish).getSeconds();
+            System.out.println("rec tail O(N) n = "+i + ": " + tempNumber + " - "+ time + " сек.");
+            start = Instant.now();
+            tempNumber = userFib.InterationFibonacci(i, 0, 1);
+            finish = Instant.now();
+            time = Duration.between(start, finish).getSeconds();
+            System.out.println("iter O(N)     n = "+i + ": " + tempNumber + " - "+ time + " сек.");
+            start = Instant.now();
+            tempNumber = userFib.RecursionFibonacci(i);
+            finish = Instant.now();
+            time = Duration.between(start, finish).getSeconds();
+            System.out.println("rec O(2^N)    n = "+i + ": " + tempNumber  + " - "+ time + " сек.");
+            System.out.println("-----------------------------------");
         }
-//        System.out.println(userFib.InterationFibonacci(34, 0, 1));
     }
 }

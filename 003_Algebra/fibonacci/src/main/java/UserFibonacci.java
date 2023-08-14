@@ -14,4 +14,10 @@ public class UserFibonacci {
         }
         return firstNumber;
     }
+
+    public double RecursionFibonacci(long n){
+        if(n <=2)
+            return 1;
+        return RecursionFibonacci(n-1) + RecursionFibonacci(n-2);
+    }
 }

@@ -12,6 +12,7 @@
 
 1. Рекурсивный (хвостовая рекурсия) O(N) **\fibonacci\src\main\java\UserFibonacci.java** - метод **TailRecursionFibonacci()**;
 2. Итеративный O(N) **\fibonacci\src\main\java\UserFibonacci.java** - метод **InterationFibonacci()**;
+2. Рекурсивный O(2^N) **\fibonacci\src\main\java\UserFibonacci.java** - метод **RecursionFibonacci()**;
 
 Запуск данной задачи **\fibonacci\src\main\java\program1.java**
 
