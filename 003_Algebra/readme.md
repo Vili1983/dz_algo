@@ -20,7 +20,8 @@
 
 * Реализовать алгоритм поиска количества простых чисел через перебор делителей:
 
-1. O(N^2) **\primenumbers\src\main\java\PrimeNumber.java** - методы **Counter()** и **isPrime()**.
+1. O(N^2) **\primenumbers\src\main\java\PrimeNumber.java** - методы **Counter()** и **isPrime()**;
+2. O(N*sqrt(N)) **\primenumbers\src\main\java\PrimeNumber.java** - методы **CounterFast()** и **isPrimeFast()**.
 
 Запуск данной задачи **\primenumbers\src\main\java\program1.java**
 

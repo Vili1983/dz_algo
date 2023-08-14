@@ -15,7 +15,15 @@ public class program1 {
             tempNumber = primeNumber.Counter(i);
             finish = Instant.now();
             time = Duration.between(start, finish).getSeconds();
-            System.out.println(i + " --> " +tempNumber+ "  " + time + " ");
+            System.out.println("low : " + i + " --> " +tempNumber+ "  " + time + " сек.");
+
+            start = Instant.now();
+            tempNumber = primeNumber.CounterFast(i);
+            finish = Instant.now();
+            time = Duration.between(start, finish).getSeconds();
+            System.out.println("fast: " + i + " --> " +tempNumber+ "  " + time + " сек.");
+
+            System.out.println("------------------------------------------");
         }
 
 
