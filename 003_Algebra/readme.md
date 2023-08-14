@@ -11,6 +11,7 @@
 * РРеализовать рекурсивный и итеративный алгоритмы поиска чисел Фибоначчи:
 
 1. Рекурсивный (хвостовая рекурсия) O(N) **\fibonacci\src\main\java\UserFibonacci.java** - метод **TailRecursionFibonacci()**;
+2. Итеративный O(N) **\fibonacci\src\main\java\UserFibonacci.java** - метод **InterationFibonacci()**;
 
 Запуск данной задачи **\fibonacci\src\main\java\program1.java**
 
