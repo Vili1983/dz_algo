@@ -19,4 +19,16 @@ public class UserMath {
         }
         return result;
     }
+
+    public double DegreeRecursion(double baseOfDegree, long degree){
+        if(degree == 0) return 1;
+        if(degree == 1) return baseOfDegree;
+
+        if(degree%2 == 0){
+            double result = DegreeRecursion(baseOfDegree, degree/2);
+            return result*result;
+        } else {
+            return baseOfDegree * DegreeRecursion(baseOfDegree, degree - 1);
+        }
+    }
 }
